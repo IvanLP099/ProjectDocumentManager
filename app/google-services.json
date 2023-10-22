@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "803790503575",
+    "project_id": "agenda-app-750ff",
+    "storage_bucket": "agenda-app-750ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803790503575:android:09103c18da8d6b3a36f3d2",
+        "android_client_info": {
+          "package_name": "com.injector.agenda_online"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA41T1gkuZE3i_B5gFdEwFj0xcZLnxvBsU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

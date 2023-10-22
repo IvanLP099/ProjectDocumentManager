@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registro">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="412dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_black">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icono_flecha_izquierda" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar cuenta"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Registro">
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/txtCrearCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtCrearCuenta"
+                android:textSize="25sp"
+                android:fontFamily="@font/gabarito"
+                android:gravity="center"
+                />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_fileName="registrerUser.json"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/txtNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:hint="@string/txtNombre"
+                    android:inputType="textPersonName|textCapWords"
+                    android:drawableEnd="@drawable/icono_nombres"
+                    android:fontFamily="@font/gabarito"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/txtCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:hint="@string/txtCorreo"
+                    android:inputType="textEmailAddress"
+                    android:drawableEnd="@drawable/icono_correo"
+                    android:fontFamily="@font/gabarito"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:passwordToggleEnabled="true"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/txtContrasenia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:hint="@string/txtContrasenia"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/gabarito"
+                    android:drawablePadding="10dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:passwordToggleEnabled="true"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/txtConfirmarContrasenia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:hint="@string/txtConfirmarContrasenia"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/gabarito"
+                    android:drawablePadding="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRegistrarUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/btnRegistrarUsuario"
+                android:textSize="18sp"
+                android:fontFamily="@font/gabarito"/>
+
+            <TextView
+                android:id="@+id/txtTengoCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/txtTengoCuenta"
+                android:fontFamily="@font/gabarito"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
