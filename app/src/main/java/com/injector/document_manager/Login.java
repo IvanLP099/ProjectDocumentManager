@@ -2,6 +2,7 @@ package com.injector.document_manager;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -11,6 +12,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,6 +37,17 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        ImageView botonToolbar = toolbar.findViewById(R.id.botonImageToolbar);
+
+        //Agregar funcionalidad a la imagen para retroceder
+        botonToolbar.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                onBackPressed();
+            }
+        });
+        setSupportActionBar(toolbar);
 
         correoLogin = findViewById(R.id.txtCorreoLogin);
         passwordLogin = findViewById(R.id.txtPasswordLogin);

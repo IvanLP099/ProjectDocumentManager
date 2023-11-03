@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -48,6 +49,14 @@ public class Registro extends AppCompatActivity {
         actionBar.setDisplayShowHomeEnabled(true);*/
 
         Toolbar toolbar = findViewById(R.id.toolbar);
+        ImageView botonToolbar = toolbar.findViewById(R.id.botonImageToolbar);
+
+        //Agregar funcionalidad a la imagen para retroceder
+        botonToolbar.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                onBackPressed();
+            }
+        });
         setSupportActionBar(toolbar);
 
         nombreEt = findViewById(R.id.txtNombre);

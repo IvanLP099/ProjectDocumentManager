@@ -13,6 +13,7 @@
         android:background="@color/red_black">
 
         <ImageView
+            android:id="@+id/botonImageToolbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/icono_flecha_izquierda" />
@@ -63,6 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/txtCorreoLogin"
+                android:fontFamily="@font/gabarito"
                 android:drawableEnd="@drawable/icono_correo"
                 android:drawablePadding="10dp"
                 android:padding="20dp"/>
@@ -80,6 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/txtPasswordLogin"
+                android:fontFamily="@font/gabarito"
                 android:drawablePadding="10dp"
                 android:padding="20dp"
                 android:inputType="textPassword"
