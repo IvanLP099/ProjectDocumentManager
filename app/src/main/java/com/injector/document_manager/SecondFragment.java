@@ -1,4 +1,4 @@
-package com.injector.agenda_online;
+package com.injector.document_manager;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.injector.agenda_online.databinding.FragmentSecondBinding;
+import com.injector.document_manager.databinding.FragmentSecondBinding;
 
 public class SecondFragment extends Fragment {
 

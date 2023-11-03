@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Agenda_Online</string>
+    <string name="app_name">Document Manager</string>
     <!--Main activity-->
     <string name="btn_login">Login</string>
     <string name="btn_registro">Registro</string>

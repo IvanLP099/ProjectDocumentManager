@@ -14,6 +14,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Agenda_Online"
+rootProject.name = "document_manager"
 include(":app")
  

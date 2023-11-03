@@ -1,4 +1,4 @@
-package com.injector.agenda_online;
+package com.injector.document_manager;
 
 import org.junit.Test;
 

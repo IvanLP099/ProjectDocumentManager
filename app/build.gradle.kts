@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.injector.agenda_online"
+    namespace = "com.injector.document_manager"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.injector.agenda_online"
+        applicationId = "com.injector.document_manager"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
