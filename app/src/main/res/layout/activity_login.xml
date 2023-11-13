@@ -6,28 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="412dp"
-        android:layout_height="wrap_content"
-        android:background="@color/red_black">
-
-        <ImageView
-            android:id="@+id/botonImageToolbar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/icono_flecha_izquierda" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Iniciar Sesión"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-
-    </androidx.appcompat.widget.Toolbar>
+    <include
+        layout="@layout/activity_custom_toolbar"/>
     
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"

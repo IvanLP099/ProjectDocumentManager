@@ -42,7 +42,7 @@ public class PantallaDeCarga extends AppCompatActivity {
         }
         //Caso contrario al menu principal
         else{
-            startActivity(new Intent(PantallaDeCarga.this, MainMenuActivity.class));
+            startActivity(new Intent(PantallaDeCarga.this, MenuPrincipal.class));
             finish();
         }
     }

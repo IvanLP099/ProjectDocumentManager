@@ -26,6 +26,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 
+
 public class Registro extends AppCompatActivity {
 
     EditText nombreEt, correoEt, contraseniaEt, confirmaContraseniaEt;
@@ -49,6 +50,7 @@ public class Registro extends AppCompatActivity {
         actionBar.setDisplayShowHomeEnabled(true);*/
 
         Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         ImageView botonToolbar = toolbar.findViewById(R.id.botonImageToolbar);
 
         //Agregar funcionalidad a la imagen para retroceder
@@ -57,7 +59,7 @@ public class Registro extends AppCompatActivity {
                 onBackPressed();
             }
         });
-        setSupportActionBar(toolbar);
+
 
         nombreEt = findViewById(R.id.txtNombre);
         correoEt = findViewById(R.id.txtCorreo);
@@ -89,11 +91,11 @@ public class Registro extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    //@Override
+    /*public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
-    }
+    }*/
 
     private void validarDatos(){
         nombre = nombreEt.getText().toString();
