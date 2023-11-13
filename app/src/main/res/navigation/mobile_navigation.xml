@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.injector.document_manager.fragments.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.injector.document_manager.fragments.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.injector.document_manager.fragments.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_documento"
+        android:name="com.injector.document_manager.fragments.documento.DocumentosFragment"
+        android:label="@string/menu_document"
+        tools:layout="@layout/fragment_documentos"/>
+    <fragment
+        android:id="@+id/nav_usuario"
+        android:name="com.injector.document_manager.fragments.usuario.UsuarioFragment"
+        android:label="@string/menu_user"
+        tools:layout="@layout/fragment_usuario"/>
+    <fragment
+        android:id="@+id/nav_configuracion"
+        android:name="com.injector.document_manager.fragments.configuracion.ConfiguracionFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_configuracion"/>
+    <fragment
+        android:id="@+id/nav_termino_politica"
+        android:name="com.injector.document_manager.fragments.terminos_politicas.TerminosPoliticasFragment"
+        android:label="@string/menu_term_politics"
+        tools:layout="@layout/fragment_terminos_politicas"/>
+</navigation>

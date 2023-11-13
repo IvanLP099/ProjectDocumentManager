@@ -1,4 +1,4 @@
-package com.injector.document_manager;
+package com.injector.document_manager.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +22,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.injector.document_manager.R;
 
 public class Login extends AppCompatActivity {
 
@@ -105,7 +106,7 @@ public class Login extends AppCompatActivity {
                         if(task.isSuccessful()){
                             progressDialog.dismiss();
                             FirebaseUser user = firebaseAuth.getCurrentUser();
-                            startActivity(new Intent(Login.this, MenuPrincipal.class));
+                            startActivity(new Intent(Login.this, NavigationDrawer.class));
                             Toast.makeText(Login.this,"Bienvenido(a):"+user.getEmail(),Toast.LENGTH_SHORT).show();
                             finish();
                         }

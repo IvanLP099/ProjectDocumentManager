@@ -13,23 +13,27 @@
         android:theme="@style/Theme.document_manager"
         tools:targetApi="31">
         <activity
+            android:name=".activities.NavigationDrawer"
+            android:exported="false"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/Theme.document_manager.NoActionBar" />
+        <activity
             android:name=".MainActivity2"
             android:exported="false" />
-
         <activity
-            android:name=".MenuPrincipal"
+            android:name=".activities.MenuPrincipal"
             android:exported="false"
             android:label="@string/title_activity_menu_principal"
             android:theme="@style/Theme.document_manager" />
         <activity
-            android:name=".Registro"
+            android:name=".activities.Registro"
             android:exported="false"
-            android:theme="@style/Theme.Material3.Light.NoActionBar"/>
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
         <activity
-            android:name=".Login"
+            android:name=".activities.Login"
             android:exported="false" />
         <activity
-            android:name=".PantallaDeCarga"
+            android:name=".activities.PantallaDeCarga"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,7 +42,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

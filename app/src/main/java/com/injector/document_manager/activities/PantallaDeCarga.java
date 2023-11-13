@@ -1,4 +1,4 @@
-package com.injector.document_manager;
+package com.injector.document_manager.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.os.Handler;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.injector.document_manager.R;
 
 public class PantallaDeCarga extends AppCompatActivity {
 
@@ -42,7 +43,7 @@ public class PantallaDeCarga extends AppCompatActivity {
         }
         //Caso contrario al menu principal
         else{
-            startActivity(new Intent(PantallaDeCarga.this, MenuPrincipal.class));
+            startActivity(new Intent(PantallaDeCarga.this, NavigationDrawer.class));
             finish();
         }
     }

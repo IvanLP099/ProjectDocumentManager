@@ -1,4 +1,4 @@
-package com.injector.document_manager;
+package com.injector.document_manager.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.injector.document_manager.R;
 
 public class MenuPrincipal extends AppCompatActivity {
 
