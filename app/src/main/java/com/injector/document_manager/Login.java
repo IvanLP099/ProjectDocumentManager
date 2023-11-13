@@ -105,7 +105,7 @@ public class Login extends AppCompatActivity {
                         if(task.isSuccessful()){
                             progressDialog.dismiss();
                             FirebaseUser user = firebaseAuth.getCurrentUser();
-                            startActivity(new Intent(Login.this, MenuPrincipal.class));
+                            startActivity(new Intent(Login.this, MainMenuActivity.class));
                             Toast.makeText(Login.this,"Bienvenido(a):"+user.getEmail(),Toast.LENGTH_SHORT).show();
                             finish();
                         }
