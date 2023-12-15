@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Document Manager</string>
+    <!--Main activity-->
+    <string name="btn_login">Login</string>
+    <string name="btn_registro">Registro</string>
+
+    <!--ACTIVIDAD REGISTRO-->
+    <string name="txtCrearCuenta">Crear cuenta</string>
+    <string name="txtNombre">Nombres:</string>
+    <string name="txtCorreo">Correo electronico: </string>
+    <string name="txtContrasenia">Contraseña</string>
+    <string name="txtConfirmarContrasenia">Confirmar contraseña</string>
+    <string name="btnRegistrarUsuario">Registrar</string>
+    <string name="txtTengoCuenta">Tengo una cuenta</string>
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+    </string>
+
+    <!--MENU PRINCIPAL-->
+    <string name="CerrarSesion">Salir</string>
+
+    <!--ACTIVIDAD LOGIN-->
+    <string name="txtIniciarSesion">Iniciar Sesion</string>
+    <string name="txtCorreoLogin">Correo electrónico</string>
+    <string name="txtPasswordLogin">Contraseña</string>
+    <string name="btnLogin">Ingresar</string>
+    <string name="txtNuevoUsuario">¿No tienes una cuenta?</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--BNavigation drawer-->
+    <string name="menu_inicio">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_terminos_politicos">Términos y políticas</string>
+    <string name="menu_usuario">Cuenta</string>
+    <string name="menu_documento">Documento</string>
+    <string name="menu_ajustes">Configuración</string>
+    <string name="menu_cerrar_sesion">Cerrar Sesión</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Toolbar-->
+
+    <!--Fragment Agregar Documentos-->
+    <string name="txt_idDocumento">Id</string>
+    <string name="txt_nombreDocumento">Documento</string>
+    <string name="txt_desripcionDocumento">Descripcion</string>
+    <string name="txt_registrarDocumento">Registrar</string>
+
+</resources>
