@@ -6,17 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.documento.DocumentosFragment">
 
-    <ImageView
-        android:id="@+id/image_document"
-        android:layout_width="387dp"
-        android:layout_height="139dp"
-        app:layout_constraintBottom_toTopOf="@+id/text_documents"
+    <!-- <Button
+        android:id="@+id/btn_agregarDocumento"
+        android:layout_width="152dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="28dp"
+        android:text="Agregar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82">
+        app:layout_constraintTop_toTopOf="parent" /> -->
 
-    </ImageView>
+    <!-- <Button
+        android:id="@+id/btn_importarDocumento"
+        android:layout_width="148dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="Importar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TextView
         android:id="@+id/text_documents"
@@ -29,10 +37,10 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285" />
+        app:layout_constraintVertical_bias="0.193" />
 
     <GridView
         android:id="@+id/grid_document"
@@ -46,6 +54,84 @@
         app:layout_constraintVertical_bias="0.423">
 
     </GridView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+
+        android:text="@string/btn_acciones"
+        app:icon="@drawable/baseline_acciones"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        tools:ignore="MissingConstraints"
+        >
+
+    </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+
+    <TextView
+        android:id="@+id/txt_registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:text="@string/btn_registrarDocumento"
+
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_registerDocument"
+        app:layout_constraintEnd_toEndOf="@+id/btn_registerDocument"
+        app:layout_constraintTop_toTopOf="@+id/btn_registerDocument"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="336dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_registerDocument"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_actions"
+        app:layout_constraintEnd_toEndOf="@+id/btn_actions"
+
+        app:srcCompat="@android:drawable/ic_input_add">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <TextView
+        android:id="@+id/txt_import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="60dp"
+
+        android:text="@string/btn_importarDocumento"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_importDocument"
+        app:layout_constraintEnd_toEndOf="@+id/btn_importDocument"
+        app:layout_constraintTop_toTopOf="@+id/btn_importDocument"
+        app:layout_constraintVertical_bias="0.517"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_importDocument"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_registerDocument"
+        app:layout_constraintEnd_toEndOf="@+id/btn_registerDocument"
+        app:srcCompat="@drawable/baseline_adddocument"
+        tools:ignore="ExtraText">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

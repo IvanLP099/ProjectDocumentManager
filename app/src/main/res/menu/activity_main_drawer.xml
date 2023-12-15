@@ -28,7 +28,7 @@
             />
         <item
             android:id="@+id/nav_configuracion"
-            android:icon="@drawable/baseline_settings_24"
+            android:icon="@drawable/baseline_settings"
             android:title="@string/menu_ajustes"/>
         <item
             android:id="@+id/nav_termino_politica"

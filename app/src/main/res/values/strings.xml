@@ -71,4 +71,25 @@
     <string name="txt_desripcionDocumento">Descripcion</string>
     <string name="txt_registrarDocumento">Registrar</string>
 
+    <!--Actions buttons-->
+    <string name="btn_acciones">Acciones</string>
+    <string name="btn_registrarDocumento">Registrar</string>
+    <string name="btn_importarDocumento">Importar</string>
+
+
+    <!-- Dashboard -->
+    <string name="ds_usuarios">Usuarios</string>
+    <string name="ds_documentos">Documentos</string>
+    <string name="ds_configuracion">Configuración</string>
+    <string name="ds_preguntas_frecuentes">Preguntas frecuentes</string>
+    <!--Mensaje de Trending-->
+    <string name="txt_trending">
+        Simplifica la gestión de documentos con nuestra herramienta! \n\n
+
+        #GestorDeDocumentos \n
+        #Eficiencia \n
+        #OrganizaciónDocumental</string>
+
+
+
 </resources>

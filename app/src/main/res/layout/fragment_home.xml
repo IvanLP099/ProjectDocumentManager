@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/white"
     tools:context=".ui.fragments.home.HomeFragment">
 
     <ScrollView
@@ -31,6 +31,7 @@
                 android:background="@color/green_white"
                 android:gravity="center"
                 android:orientation="vertical"
+
                 android:padding="15dp"
                 app:layout_constraintDimensionRatio="H,1:1"
                 app:layout_constraintEnd_toStartOf="@+id/layout2"
@@ -44,13 +45,13 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/txt_nombreDocumento"
                     android:padding="8dp"
-                    android:src="@drawable/icono_correo" />
+                    android:src="@drawable/baseline_users" />
 
                 <TextView
                     android:layout_width="105dp"
                     android:layout_height="23dp"
                     android:gravity="center"
-                    android:text="@string/txt_nombreDocumento"
+                    android:text="@string/ds_usuarios"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -79,7 +80,7 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/txt_nombreDocumento"
                     android:padding="8dp"
-                    android:src="@drawable/icono_correo" />
+                    android:src="@drawable/baseline_document" />
 
                 <TextView
                     android:layout_width="105dp"
@@ -94,8 +95,8 @@
 
             <LinearLayout
                 android:id="@+id/layout3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="166dp"
+                android:layout_height="178dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="24dp"
                 android:background="@color/green_white"
@@ -114,13 +115,13 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/txt_nombreDocumento"
                     android:padding="8dp"
-                    android:src="@drawable/icono_correo" />
+                    android:src="@drawable/baseline_settings" />
 
                 <TextView
-                    android:layout_width="105dp"
+                    android:layout_width="129dp"
                     android:layout_height="23dp"
                     android:gravity="center"
-                    android:text="@string/txt_nombreDocumento"
+                    android:text="@string/ds_configuracion"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -132,17 +133,17 @@
                 android:id="@+id/layout4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="104dp"
+                android:layout_marginTop="24dp"
                 android:background="@color/green_white"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="15dp"
+
                 app:layout_constraintDimensionRatio="H,1:1"
-                app:layout_constraintEnd_toStartOf="@+id/layout3"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/layout1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.171"
+                app:layout_constraintStart_toEndOf="@+id/layout3"
+                app:layout_constraintTop_toBottomOf="@+id/layout2"
                 tools:ignore="InvalidId">
 
                 <ImageView
@@ -151,20 +152,56 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/txt_nombreDocumento"
                     android:padding="8dp"
-                    android:src="@drawable/icono_correo" />
+                    android:src="@drawable/baseline_question_answer" />
 
                 <TextView
-                    android:layout_width="105dp"
-                    android:layout_height="23dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
                     android:gravity="center"
-                    android:text="@string/txt_nombreDocumento"
+                    android:text="@string/ds_preguntas_frecuentes"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
 
             </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/trending_background"
+                android:padding="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/layout4"
+                app:layout_constraintStart_toStartOf="@+id/layout1"
+                app:layout_constraintTop_toBottomOf="@+id/layout3">
 
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_favorite_star"
+                    app:tint="@color/white"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/textTrending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:maxLines="8"
+                    android:paddingStart="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="2dp"
+                    android:text="@string/txt_trending"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="54dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

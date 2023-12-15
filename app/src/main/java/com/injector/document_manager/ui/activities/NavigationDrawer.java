@@ -46,13 +46,15 @@ public class NavigationDrawer extends AppCompatActivity implements NavigationVie
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarNavigationDrawer.toolbar);
-        binding.appBarNavigationDrawer.fab.setOnClickListener(new View.OnClickListener() {
+
+        //Evento de boton flotante default
+        /*binding.appBarNavigationDrawer.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
         drawer = binding.drawerLayout;
         navigationView = binding.navView;
 

@@ -26,12 +26,20 @@
         android:id="@+id/nav_agregar_documento"
         android:name="com.injector.document_manager.ui.fragments.documento.DocumentosFragment"
         android:label="@string/txt_registrarDocumento"
-        tools:layout="@layout/fragment_agregar_documento"/>
+        tools:layout="@layout/fragment_agregar_documento">
+        <action
+            android:id="@+id/action_nav_agregar_documento_to_nav_documento"
+            app:destination="@id/nav_documento" />
+    </fragment>
     <fragment
         android:id="@+id/nav_documento"
         android:name="com.injector.document_manager.ui.fragments.documento.DocumentosFragment"
         android:label="@string/menu_documento"
-        tools:layout="@layout/fragment_documento"/>
+        tools:layout="@layout/fragment_documento">
+        <action
+            android:id="@+id/action_nav_documento_to_nav_agregar_documento"
+            app:destination="@id/nav_agregar_documento" />
+    </fragment>
     <fragment
         android:id="@+id/nav_usuario"
         android:name="com.injector.document_manager.ui.fragments.usuario.UsuarioFragment"
